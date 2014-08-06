@@ -1,8 +1,63 @@
 <html>
-	<head>
-		<script src="caisse.js"></script>
-	</head>
-	<body>
-		
-	</body>
+    <head>
+        <link rel="stylesheet" href="https://raw.githubusercontent.com/twbs/bootstrap/master/dist/css/bootstrap.css">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="caisse.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <br/>
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-6">
+                         <h1>Baby, I got your money...</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe width="100%" height="315" src="//www.youtube.com/embed/gKw5mBh4rYs?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="price">Ticket Price</label>
+                    <input  class="form-control" type="text" name="price" value="25" />
+                    <hr>
+                    <label for="price">number of 1.-</label>
+                    <input  class="form-control" type="text" name="one" value="10" />
+                    <label for="price">number of 2.-</label>
+                    <input  class="form-control" type="text" name="two" value="20" />
+                    <label for="price">number of 5.-</label>
+                    <input  class="form-control" type="text" name="five" value="50" />
+                    <label for="price">number of 10.-</label>
+                    <input  class="form-control" type="text" name="ten" value="50" />
+                    <label for="price">number of 20.-</label>
+                    <input  class="form-control" type="text" name="twenty" value="50" />
+                    <label for="price">number of 50.-</label>
+                    <input  class="form-control" type="text" name="fifty" value="4" />
+                    <label for="price">number of 100.-</label>
+                    <input  class="form-control" type="text" name="hundred" value="2" />
+                    <label for="price">number of 200.-</label>
+                    <input  class="form-control" type="text" name="two-hundred" value="0" />
+                </div>
+
+                <div class="col-md-6">
+                    <div class="jumbotron">
+                        <h2>Float: <span id="float"></span></h2>
+                        <p>
+                            <button class="btn btn-lg btn-primary" onclick="calculate();" >Calculate</button>
+                        </p>
+                        <p id="result">
+                            
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+
+        </div>
+    </body>
 </html>
